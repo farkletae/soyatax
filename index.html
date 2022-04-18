@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <HEAD>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poiret+One&family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <TITLE>Happy Birthday Siya</TITLE>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.5/fullpage.min.css" integrity="sha512-x9dWEl8TRV0LIHZXXIyjLOTPQSDPrvzNau+XQjHfge0VJwAzKzr2wxI6b7gLS/ogBDmhTQXZ54L5I4mDtPNQLA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">    
+    </HEAD>
+    <BODY>
+        <div id="loader">
+            <img src="img/load.gif">
+        </div>
+        <div id="fullpage">
+            <div class="section" id="home">
+                <audio hidden loop data-autoplay data-keepplaying>
+                    <source src="img/backgroundmusic.mp3" type="audio/mpeg">
+                </audio>
+                    <h1>Happy Birthday!</h1>
+                    <P>IT'S BIRTHDAY WEEEEEEEEKKKKK💖 DAY 2
+                        <br>
+                        Everyday till your birthday, you are gonna find a new reel and sometimes <br>
+                        even a surprise on this website!
+                         <br>
+                    </P>
+                    <h2> STAY TUNED! 🎉</h2>
+                    <img src="img/woah.png" id="woah">
+                    <img src="img/cake.png" id="cake">
+                    <div class="countdown">
+                        <div id="days">NA</div>
+                        <div id="hours">NA</div>
+                        <div id="minutes">NA</div>
+                        <div id="seconds">NA</div>
+                    </div>
+            </div>
+
+            <div class="section" id="reel">
+                <img src="img/wavesOpacity.svg" id="waves">
+                <h1>Reel of the day!!</h1>
+                <p>How to be happy all the time?</p>
+                <img src="img/plunt.png" id="plunt">
+                <img src="img/plunt.png" id="plunt2">
+                <img src="img/pogupogu.png" id="pogu">
+                <img src="img/sopogudamn.png" id="bae">
+                <video height="500" width="250" style="position:absolute;top:200px;left:625px;" controls><source src="img/reelday2.mp4"></video>
+            </div>
+
+            <div class="section" id="gift">
+                <h1>THE FINALE</h1>
+                <div class="countdown1">
+                    <div id="days1">NA</div>
+                    <div id="hours1">NA</div>
+                    <div id="minutes1">NA</div>
+                    <div id="seconds1">NA</div>
+                </div>
+                <div class="trailer">
+                    <video src="img/infinite.mp4" controls="true"></video>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.5/fullpage.min.js" integrity="sha512-IE31EphIcD5gSDjkgexgoxfgPdZWH6LL2LRoEFZem0exi+yUOuSwb3LKnZZfok6Coa9ofkrA4AEZUXzrfLoUXg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <script>
+            
+            new fullpage('#fullpage', {
+	        autoScrolling:true,
+            navigation:true,
+            credits: {enabled: false}
+            });
+
+        </script>
+
+        <script>
+            var countDate = new Date('April 24, 2022 00:00:00').getTime();
+
+            function bday(){
+                var now = new Date().getTime();
+                gap = countDate - now;
+
+                var second = 1000;
+                var minute = second * 60; 
+                var hour = minute * 60;
+                var day = hour * 24;
+
+                var d = Math.floor(gap / (day));
+                var h = Math.floor((gap % (day)) / (hour));
+                var m = Math.floor((gap % (hour)) / (minute));
+                var s = Math.floor((gap % (minute)) / (second));
+                
+                document.getElementById('days').innerText = d;
+                document.getElementById('hours').innerText = h;
+                document.getElementById('minutes').innerText = m;
+                document.getElementById('seconds').innerText = s;
+            }
+            setInterval(function(){
+                bday();
+            }, 1000)
+        </script>
+    
+    <script>
+        var countDate = new Date('April 24, 2022 00:00:00').getTime();
+
+        function bday1(){
+            var now = new Date().getTime();
+            gap = countDate - now;
+
+            var second = 1000;
+            var minute = second * 60; 
+            var hour = minute * 60;
+            var day = hour * 24;
+
+            var d = Math.floor(gap / (day));
+            var h = Math.floor((gap % (day)) / (hour));
+            var m = Math.floor((gap % (hour)) / (minute));
+            var s = Math.floor((gap % (minute)) / (second));
+            
+            document.getElementById('days1').innerText = d;
+            document.getElementById('hours1').innerText = h;
+            document.getElementById('minutes1').innerText = m;
+            document.getElementById('seconds1').innerText = s;
+        }
+        setInterval(function(){
+            bday1();
+        }, 1000)
+    </script>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>  
+    <script>  
+       $(window).on('load', function () {  
+       $("#loader").fadeOut("slow");  
+    });  
+    </script>
+
+
+    </BODY>
+    </HTML>
+  
