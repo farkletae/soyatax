@@ -170,10 +170,10 @@ h1{
 
 
 #reel p{
+    text-align: center;
+    left: 36%;
+    top: 117%;
     display: inline-block;
-    margin-top: 75px;
-    margin-bottom: 500px;
-    margin-left: 600px;
     position: fixed;
     font-size: 30px;
     text-decoration: none;
@@ -268,4 +268,21 @@ h1{
     height: 400px;
     width: 250px;
     outline: none;
+}
+
+#comment{
+    background-color: #B9E9C9;
+    background-image: url(img/Sprinkle.svg);
+    display: flex;
+}
+
+#comment h1{
+    position: relative;
+    bottom: 300px;
+
+}
+
+#comment iframe{
+    position: fixed;
+    left: 30%;
 }
