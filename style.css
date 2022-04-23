@@ -171,7 +171,7 @@ h1{
 
 #reel p{
     text-align: center;
-    left: 36%;
+    left: 40%;
     top: 117%;
     display: inline-block;
     position: fixed;
@@ -255,18 +255,17 @@ h1{
 
 .trailer{
     position: fixed;
-    margin-top: 300px;
-    margin-left: 625px;
+    margin-top: 100px;
+    margin-left: 400px;
     z-index: 10000;
-    background: rgba(0, 0, 0, 0.95);
     justify-content: center;
     align-items: center;
 }
 
-.trailer video{
+.trailer iframe{
     position: relative;
-    height: 400px;
-    width: 250px;
+    height: 500px;
+    width: 720px;
     outline: none;
 }
 
