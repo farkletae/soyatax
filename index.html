@@ -29,11 +29,12 @@
                     <source src="img/backgroundmusic.mp3" type="audio/mpeg">
                 </audio>
                     <h1>Happy Birthday!</h1>
-                    <P>IT'S BIRTHDAY EVEEEEEEEEEEEEEE💖
+                    <P>A HAPPY HAPPY HAPPY BIRTHDAYYYYYYYYY
                         <br>
-                        ITS ALMOST YOUR BDAY!!!!!! WOAHHHHHHHHH SO POGU POGU<br>
+                        HAPPIEST BIRTHDAY MY POGU POGUY SIYAAAAAAAAAAA<br>
+                        SWEET 16 WOO HOO! 🥂
                     </P>
-                    <h2> STAY TUNED! 🎉</h2>
+                    <h2> ITS TIME FOR THE FINALE! 🎉</h2>
                     <img src="img/woah.png" id="woah">
                     <a href="https://docs.google.com/document/d/1_eTJTqVLw740kD5R118NmFlyCMdxBcaNnXj_-Q-dEyw/edit?usp=sharing"><img src="img/cake.png" id="cake"></a>
                     <div class="countdown">
@@ -58,14 +59,8 @@
 
             <div class="section" id="gift">
                 <h1>THE FINALE</h1>
-                <div class="countdown1">
-                    <div id="days1">NA</div>
-                    <div id="hours1">NA</div>
-                    <div id="minutes1">NA</div>
-                    <div id="seconds1">NA</div>
-                </div>
                 <div class="trailer">
-                    <video src="img/toofine.mp4" controls="true"></video>
+                    <iframe src="https://drive.google.com/file/d/1fFaof66zKt1WG0C0h1iCg8qrdI1asUY1/preview"></iframe>
                 </div>
 
             </div>
@@ -149,6 +144,23 @@
        $(window).on('load', function () {  
        $("#loader").fadeOut("slow");  
     });  
+    </script>
+
+    <script src="./confetti.js"></script>
+    <script>
+        const start = () => {
+            setTimeout(function(){
+                confetti.start();
+            }, 3000); 
+        };
+        
+        const stop = () =>{
+            setTimeout(function(){
+                confetti.stop();   
+            }, 6000)
+        }
+        start();
+        stop();
     </script>
 
 
