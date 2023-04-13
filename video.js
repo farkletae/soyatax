@@ -13,5 +13,5 @@ myButton.addEventListener('click', () => {
 
 video.addEventListener('ended', () => {
   // Redirect to another website
-  window.location.href = ''; // Replace with the URL of the website you want to redirect to
+  window.location.href = 'https://farkletae.github.io/soyatax/index.html'; // Replace with the URL of the website you want to redirect to
 });
