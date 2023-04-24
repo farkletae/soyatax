@@ -16,8 +16,11 @@ function updateCountdown() {
   var currentDate = new Date();
   var timeDifference = targetDate - currentDate;
 
-  if (timeDifference <= 0) {
-    document.getElementById("countdown").innerHTML = "Event has already occurred!";
+  if (timeDifference <= -1000) {
+    var text = "Happy Birthday Siya!";
+    var fonts = ["Abril Fatface", "Dancing Script", "Great Vibes", "Rubik Pixels", "Inspiration", "Amatic SC", "Playfair Display SC", "Cinzel Decorative", "Rock Salt", "Syncopate", "Nabla", "Henny Penny", "Comforter Brush"];
+    var randomFont = fonts[Math.floor(Math.random() * fonts.length)];
+    document.getElementById("countdown").innerHTML = "<span style='font-family: " + randomFont + "'>" + text + "</span>";
     return;
   }
 
@@ -32,7 +35,7 @@ function updateCountdown() {
   document.getElementById("seconds").innerText = padZero(seconds);
 
   // Change font every second
-  var fonts = ["Abril Fatface", "Dancing Script", "Great Vibes", "Rubik Pixels", "Inspiration", "Amatic SC", "Playfair Display SC", "Cinzel Decorative", "Rock Salt", "Syncopate", "Nabla", "Henny Penny","Comforter Brush"];
+  var fonts = ["Abril Fatface", "Dancing Script", "Great Vibes", "Rubik Pixels", "Inspiration", "Amatic SC", "Playfair Display SC", "Cinzel Decorative", "Rock Salt", "Syncopate", "Nabla", "Henny Penny", "Comforter Brush"];
   var randomFont = fonts[Math.floor(Math.random() * fonts.length)];
   document.getElementById("countdown").style.fontFamily = randomFont;
 

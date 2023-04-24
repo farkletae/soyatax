@@ -322,6 +322,26 @@ body {
     }
 }
 
+.box-11 {
+    animation: box11 0.3s ease-out forwards;
+}
+
+@keyframes box11 {
+    0% {
+        opacity: 0;
+        transform: translateY(0%);
+        /* Start from the top of the page */
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 100;
+        transform: translateX(0);
+        transform: translateY(-10px);
+        /* Move to the final position */
+    }
+}
+
 .box:hover {
     width: 140px;
 }
